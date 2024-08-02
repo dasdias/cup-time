@@ -7,7 +7,7 @@ export const CartItem = ({ title, image, price }) => {
           <h3 className="product__title">{title}</h3>
           <div className="cart-product__count">
             <button className="cart-product__minus"></button>
-            <input className="cart-product__num" type="number" name="count" />
+            <input className="cart-product__num" type="number" value={1} />
             <button className="cart-product__pluse"></button>
           </div>
           <div className="product__price">{price}&nbsp;₽</div>
