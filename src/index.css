@@ -140,7 +140,7 @@ input[type="number"] {
   text-decoration: none;
 }
 
-.header__menu-link_active {
+.header__menu-link.active {
   color: var(--accent-color);
 }
 
@@ -157,6 +157,10 @@ input[type="number"] {
   font-size: 12px;
   line-height: 36px;
   text-align: center;
+  color: var(--accent-color);
+}
+
+.header__cart-link.active {
   color: var(--accent-color);
 }
 
@@ -455,8 +459,6 @@ input[type="number"] {
   line-height: 1.24;
   color: var(--dark-color);
   font-size: 20px;
-  /* display: flex; */
-  /* flex-shrink: 0; */
   display: flex;
   align-items: center;
   gap: 4px;

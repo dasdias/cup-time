@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 import { Promo } from "./Promo"
 import { Cart } from "./Cart"
 import { Order } from "./Order"
@@ -10,6 +10,9 @@ export const Main = () => {
     <main className="main">
       <Routes >
         <Route path="/" element={
+          <Navigate to="/products?categry=tea" />
+        } />
+        <Route path="/products" element={
           <>
             <Promo />
             <Products />
